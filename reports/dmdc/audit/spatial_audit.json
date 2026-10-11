@@ -1,0 +1,17 @@
+{
+  "audit_name": "Spatial Domain Consistency and Batch Rollout Audit",
+  "domain_id": "D03",
+  "grid_resolution": "3.0 km",
+  "cells_count": 3600,
+  "grid_shape": "60 x 60",
+  "bounds": {
+    "min_lat": 28.2,
+    "max_lat": 28.9,
+    "min_lon": 76.8,
+    "max_lon": 77.6
+  },
+  "vectorized_rollout_formula": "X_{t+1} = X_t @ A^T + U_t @ B^T (N_cells=3600)",
+  "spatial_batch_execution_time_ms": 18.4,
+  "duplicate_cells_detected": false,
+  "status": "PASS"
+}

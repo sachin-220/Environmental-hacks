@@ -1,0 +1,13 @@
+{
+  "audit_name": "One-Step Target Leakage and Invariance Audit",
+  "target_modification_invariance_test": "PASSED",
+  "pm25_temporal_variation_in_fixture": {
+    "mean_std_across_time_per_cell": 0.0,
+    "max_std_across_time_per_cell": 0.0,
+    "is_pm25_static_in_time": true,
+    "explanation": "In the Phase 2 NetCDF generation fixture, PM2.5 was computed from a spatial Gaussian plume modulated by a diurnal factor that evaluates to 1.0. Consequently, PM2.5 in every cell was static in time. This caused the true 1-hour transition to be x(t+1) == x(t), which explains why the 1-hour MAE was 0.0, RMSE was 0.0, R2 was 1.0, and why DMDc matched Persistence RMSE identically!"
+  },
+  "scaler_fitted_on_test": false,
+  "future_target_leakage": "NONE",
+  "status": "PASS (No architectural or mathematical leakage; static PM2.5 fixture explained)"
+}

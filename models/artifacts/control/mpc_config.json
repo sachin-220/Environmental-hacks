@@ -1,0 +1,109 @@
+{
+  "framework": "Model Predictive Control (SLSQP / DMDc Linear System)",
+  "horizon_hours": 24,
+  "controllable_sectors": [
+    "road_transport",
+    "industry",
+    "power_plants",
+    "agriculture",
+    "waste_burning",
+    "residential"
+  ],
+  "lever_definitions": {
+    "road_transport": {
+      "sector": "road_transport",
+      "display_name": "Traffic Abatement (GRAP Odd-Even / EV Transit)",
+      "description": "Vehicle restriction, public transit subsidization, zero-emission commercial entry",
+      "max_feasible_reduction": 0.4,
+      "relative_cost_weight": 1.0,
+      "affected_species": [
+        "anthro_nox",
+        "anthro_voc",
+        "anthro_co",
+        "anthro_so2"
+      ],
+      "provenance": "SCENARIO"
+    },
+    "industry": {
+      "sector": "industry",
+      "display_name": "Industrial Fuel Switching & Production Curbs",
+      "description": "Shift to piped natural gas (PNG), temporary boiler throttling in industrial clusters",
+      "max_feasible_reduction": 0.5,
+      "relative_cost_weight": 1.5,
+      "affected_species": [
+        "anthro_so2",
+        "anthro_nox",
+        "anthro_voc",
+        "anthro_co"
+      ],
+      "provenance": "SCENARIO"
+    },
+    "power_plants": {
+      "sector": "power_plants",
+      "display_name": "Power Generation Re-dispatch / FGD Operation",
+      "description": "Re-dispatch coal generation away from upwind NCR plants to hydro/renewables",
+      "max_feasible_reduction": 0.35,
+      "relative_cost_weight": 2.0,
+      "affected_species": [
+        "anthro_so2",
+        "anthro_nox"
+      ],
+      "provenance": "SCENARIO"
+    },
+    "agriculture": {
+      "sector": "agriculture",
+      "display_name": "Stubble Fire In-Situ Mulching & Mechanized Suppression",
+      "description": "Active enforcement and ex-situ biomass collection incentives in Punjab/Haryana",
+      "max_feasible_reduction": 0.75,
+      "relative_cost_weight": 0.8,
+      "affected_species": [
+        "fire_frp",
+        "plume_transport_score"
+      ],
+      "provenance": "SCENARIO"
+    },
+    "waste_burning": {
+      "sector": "waste_burning",
+      "display_name": "Municipal Solid Waste Open Burning Night Patrols",
+      "description": "Strict fire prevention at landfill sites (Ghazipur, Bhalswa, Okhla)",
+      "max_feasible_reduction": 0.6,
+      "relative_cost_weight": 0.5,
+      "affected_species": [
+        "anthro_co",
+        "anthro_voc"
+      ],
+      "provenance": "SCENARIO"
+    },
+    "residential": {
+      "sector": "residential",
+      "display_name": "Residential Clean Cooking & Space Heating Fuel Subsidy",
+      "description": "LPG cylinder distribution and electric heater provision for slum clusters",
+      "max_feasible_reduction": 0.3,
+      "relative_cost_weight": 0.7,
+      "affected_species": [
+        "anthro_co",
+        "anthro_voc"
+      ],
+      "provenance": "SCENARIO"
+    }
+  },
+  "tested_target_optimization": {
+    "feasibility_status": "INFEASIBLE",
+    "message": "Target AQI 300.0 cannot be fully satisfied within 24h even under Aggressive GRAP-IV emergency bounds.",
+    "target_aqi": 300.0,
+    "deadline_hours": 24,
+    "baseline_peak_aqi": 381.0,
+    "best_achievable_peak_aqi": 381.0,
+    "relative_cost": 0.01,
+    "recommended_controls": {
+      "road_transport": 0.0,
+      "industry": 0.0,
+      "power_plants": 0.0,
+      "agriculture": 0.0,
+      "waste_burning": 0.0,
+      "residential": 0.0
+    },
+    "provenance": "SCENARIO"
+  },
+  "provenance": "SCENARIO"
+}

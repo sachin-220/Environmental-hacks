@@ -1,0 +1,21 @@
+{
+  "audit_name": "Baseline Model Definitions and Skill Score Verification",
+  "baselines_evaluated": {
+    "persistence": {
+      "definition": "x_hat(t+h) = x(t) (constant forecast from initial snapshot)",
+      "implementation_status": "VERIFIED"
+    },
+    "rolling_historical_mean": {
+      "definition": "x_hat(t+h) = mu_train (mean of training data)",
+      "implementation_status": "VERIFIED"
+    }
+  },
+  "key_skill_scores_on_test_partition": {
+    "pbl_height_1h_skill": 0.929,
+    "pbl_height_6h_skill": 0.999,
+    "temperature_2m_1h_skill": 0.515,
+    "temperature_2m_6h_skill": 0.347,
+    "o3_1h_skill": 0.714,
+    "o3_6h_skill": 0.938
+  }
+}

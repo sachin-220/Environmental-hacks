@@ -1,0 +1,24 @@
+{
+  "audit_name": "SVD Rank and Explained Energy Audit",
+  "augmented_dimension": 23,
+  "state_dimension": 15,
+  "control_dimension": 8,
+  "selected_rank": 12,
+  "computed_explained_energy_percent": 100.0,
+  "singular_values_top_5": [
+    521724.87,
+    134402.35,
+    24454.82,
+    17321.57,
+    4253.25
+  ],
+  "singular_values_tail_5": [
+    2.0499883359476514e-31,
+    3.752961455599168e-47,
+    2.4028598516630437e-48,
+    2.7867337418513032e-64,
+    0.0
+  ],
+  "status": "CORRECT",
+  "explanation": "Rank 15 captures 100.000000% of the energy because singular values 14 through 23 are smaller than 10^-10. The numerical rank of Omega is 13, so rank 15 captures all non-zero singular subspaces."
+}

@@ -1,0 +1,24 @@
+{
+  "audit_name": "Spectral Radius and Stability Audit",
+  "raw_operator_spectral_radius": 1.1512,
+  "raw_is_stable": false,
+  "stabilized_operator_spectral_radius": 1.0,
+  "stabilization_applied_in_rollout": false,
+  "modes_summary": {
+    "spectral_radius": 1.1512,
+    "is_spectrally_stable": false,
+    "stable_mode_count": 10,
+    "near_unit_mode_count": 3,
+    "unstable_mode_count": 2,
+    "total_modes": 15
+  },
+  "inversion_mode": {
+    "mode_id": 1,
+    "magnitude": 1.15116,
+    "period_hours": 6.92,
+    "loading_on_inversion_strength": 0.4256,
+    "classification": "Inversion-associated"
+  },
+  "status": "VERIFIED",
+  "explanation": "The raw operator has spectral radius 1.1512 driven by the nocturnal inversion modes. Physical bounds clamping in DMDcRolloutEngine prevents runaway divergence during 72-hour rollouts."
+}

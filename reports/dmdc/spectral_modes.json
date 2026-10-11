@@ -1,0 +1,537 @@
+{
+  "stability_summary": {
+    "spectral_radius": 1.1512,
+    "is_spectrally_stable": false,
+    "stable_mode_count": 10,
+    "near_unit_mode_count": 3,
+    "unstable_mode_count": 2,
+    "total_modes": 15
+  },
+  "modes": [
+    {
+      "mode_id": 6,
+      "energy_rank": 1,
+      "eigenvalue_real": 0.08664,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.08664,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -2.44598,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 13.52578,
+      "relative_energy_fraction": 0.67821,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "co",
+          "loading": 0.2852
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.2583
+        },
+        {
+          "variable": "so2",
+          "loading": 0.144
+        },
+        {
+          "variable": "no2",
+          "loading": 0.1286
+        }
+      ],
+      "physical_classification": "UNCLASSIFIED MODE",
+      "classification_rationale": "Mixed loadings across co, relative_humidity, so2 without single dominant physical driver."
+    },
+    {
+      "mode_id": 1,
+      "energy_rank": 2,
+      "eigenvalue_real": 0.70848,
+      "eigenvalue_imag": -0.90732,
+      "magnitude": 1.15116,
+      "phase_radians": -0.9078,
+      "growth_rate_per_hour": 0.14077,
+      "frequency_rad_per_hour": -0.90784,
+      "oscillation_period_hours": 6.92,
+      "frequency_cycles_per_day": 3.468,
+      "mode_energy": 1.55641,
+      "relative_energy_fraction": 0.07804,
+      "stability_class": "UNSTABLE",
+      "top_features": [
+        {
+          "variable": "inversion_strength",
+          "loading": 0.4256
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.133
+        },
+        {
+          "variable": "o3",
+          "loading": 0.1011
+        },
+        {
+          "variable": "temperature_2m",
+          "loading": 0.0917
+        }
+      ],
+      "physical_classification": "Inversion-associated",
+      "classification_rationale": "High loading on inversion_strength (0.43) with unstable dynamics."
+    },
+    {
+      "mode_id": 0,
+      "energy_rank": 3,
+      "eigenvalue_real": 0.70848,
+      "eigenvalue_imag": 0.90732,
+      "magnitude": 1.15116,
+      "phase_radians": 0.9078,
+      "growth_rate_per_hour": 0.14077,
+      "frequency_rad_per_hour": 0.90784,
+      "oscillation_period_hours": 6.92,
+      "frequency_cycles_per_day": 3.468,
+      "mode_energy": 1.55641,
+      "relative_energy_fraction": 0.07804,
+      "stability_class": "UNSTABLE",
+      "top_features": [
+        {
+          "variable": "inversion_strength",
+          "loading": 0.4256
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.133
+        },
+        {
+          "variable": "o3",
+          "loading": 0.1011
+        },
+        {
+          "variable": "temperature_2m",
+          "loading": 0.0917
+        }
+      ],
+      "physical_classification": "Inversion-associated",
+      "classification_rationale": "High loading on inversion_strength (0.43) with unstable dynamics."
+    },
+    {
+      "mode_id": 7,
+      "energy_rank": 4,
+      "eigenvalue_real": -0.02282,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.02282,
+      "phase_radians": 3.1416,
+      "growth_rate_per_hour": -3.7801,
+      "frequency_rad_per_hour": 3.14159,
+      "oscillation_period_hours": 2.0,
+      "frequency_cycles_per_day": 12.0,
+      "mode_energy": 1.17448,
+      "relative_energy_fraction": 0.05889,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "co",
+          "loading": 0.4052
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.2356
+        },
+        {
+          "variable": "so2",
+          "loading": 0.1362
+        },
+        {
+          "variable": "boundary_layer_height",
+          "loading": 0.0733
+        }
+      ],
+      "physical_classification": "UNCLASSIFIED MODE",
+      "classification_rationale": "Mixed loadings across co, relative_humidity, so2 without single dominant physical driver."
+    },
+    {
+      "mode_id": 4,
+      "energy_rank": 5,
+      "eigenvalue_real": 0.53867,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.53867,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -0.61864,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 1.04353,
+      "relative_energy_fraction": 0.05232,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "relative_humidity",
+          "loading": 0.2939
+        },
+        {
+          "variable": "no2",
+          "loading": 0.1854
+        },
+        {
+          "variable": "temperature_2m",
+          "loading": 0.1662
+        },
+        {
+          "variable": "inversion_strength",
+          "loading": 0.1373
+        }
+      ],
+      "physical_classification": "UNCLASSIFIED MODE",
+      "classification_rationale": "Mixed loadings across relative_humidity, no2, temperature_2m without single dominant physical driver."
+    },
+    {
+      "mode_id": 2,
+      "energy_rank": 6,
+      "eigenvalue_real": -0.46483,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.46483,
+      "phase_radians": 3.1416,
+      "growth_rate_per_hour": -0.76609,
+      "frequency_rad_per_hour": 3.14159,
+      "oscillation_period_hours": 2.0,
+      "frequency_cycles_per_day": 12.0,
+      "mode_energy": 0.37001,
+      "relative_energy_fraction": 0.01855,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "inversion_strength",
+          "loading": 0.2703
+        },
+        {
+          "variable": "co",
+          "loading": 0.2226
+        },
+        {
+          "variable": "so2",
+          "loading": 0.2004
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.1116
+        }
+      ],
+      "physical_classification": "Inversion-associated",
+      "classification_rationale": "High loading on inversion_strength (0.27) with stable dynamics."
+    },
+    {
+      "mode_id": 3,
+      "energy_rank": 7,
+      "eigenvalue_real": 0.75167,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.75167,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -0.28546,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.29124,
+      "relative_energy_fraction": 0.0146,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "so2",
+          "loading": 0.2332
+        },
+        {
+          "variable": "no2",
+          "loading": 0.1888
+        },
+        {
+          "variable": "temperature_2m",
+          "loading": 0.1873
+        },
+        {
+          "variable": "co",
+          "loading": 0.1852
+        }
+      ],
+      "physical_classification": "UNCLASSIFIED MODE",
+      "classification_rationale": "Mixed loadings across so2, no2, temperature_2m without single dominant physical driver."
+    },
+    {
+      "mode_id": 8,
+      "energy_rank": 8,
+      "eigenvalue_real": -0.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.0,
+      "phase_radians": 3.1416,
+      "growth_rate_per_hour": -27.63102,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.07425,
+      "relative_energy_fraction": 0.00372,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "v_wind_10m",
+          "loading": 0.9948
+        },
+        {
+          "variable": "u_wind_10m",
+          "loading": 0.0052
+        },
+        {
+          "variable": "no2",
+          "loading": 0.0
+        },
+        {
+          "variable": "inversion_strength",
+          "loading": 0.0
+        }
+      ],
+      "physical_classification": "Regional transport-associated",
+      "classification_rationale": "Dominant horizontal wind component loading (0.99) controlling advection."
+    },
+    {
+      "mode_id": 11,
+      "energy_rank": 9,
+      "eigenvalue_real": 1.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 1.0,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -0.0,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.07257,
+      "relative_energy_fraction": 0.00364,
+      "stability_class": "PERSISTENT",
+      "top_features": [
+        {
+          "variable": "pm25",
+          "loading": 0.3878
+        },
+        {
+          "variable": "pm10",
+          "loading": 0.2883
+        },
+        {
+          "variable": "cams_aerosol",
+          "loading": 0.2717
+        },
+        {
+          "variable": "co",
+          "loading": 0.0116
+        }
+      ],
+      "physical_classification": "Aerosol-radiation-associated",
+      "classification_rationale": "Dominant particulate loading (0.39) with radiative extinction feedback."
+    },
+    {
+      "mode_id": 12,
+      "energy_rank": 10,
+      "eigenvalue_real": 1.0,
+      "eigenvalue_imag": -0.0,
+      "magnitude": 1.0,
+      "phase_radians": -0.0,
+      "growth_rate_per_hour": -0.0,
+      "frequency_rad_per_hour": -0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.07257,
+      "relative_energy_fraction": 0.00364,
+      "stability_class": "PERSISTENT",
+      "top_features": [
+        {
+          "variable": "pm25",
+          "loading": 0.3878
+        },
+        {
+          "variable": "pm10",
+          "loading": 0.2883
+        },
+        {
+          "variable": "cams_aerosol",
+          "loading": 0.2717
+        },
+        {
+          "variable": "co",
+          "loading": 0.0116
+        }
+      ],
+      "physical_classification": "Aerosol-radiation-associated",
+      "classification_rationale": "Dominant particulate loading (0.39) with radiative extinction feedback."
+    },
+    {
+      "mode_id": 13,
+      "energy_rank": 11,
+      "eigenvalue_real": 0.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.0,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -27.63102,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.06667,
+      "relative_energy_fraction": 0.00334,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "wind_speed_10m",
+          "loading": 1.0
+        },
+        {
+          "variable": "co",
+          "loading": 0.0
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.0
+        },
+        {
+          "variable": "so2",
+          "loading": 0.0
+        }
+      ],
+      "physical_classification": "Ventilation-associated",
+      "classification_rationale": "Dominant loading on boundary_layer_height/wind (1.00) governing vertical mixing."
+    },
+    {
+      "mode_id": 14,
+      "energy_rank": 12,
+      "eigenvalue_real": 0.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.0,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -27.63102,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.06667,
+      "relative_energy_fraction": 0.00334,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "surface_pressure",
+          "loading": 1.0
+        },
+        {
+          "variable": "co",
+          "loading": 0.0
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.0
+        },
+        {
+          "variable": "so2",
+          "loading": 0.0
+        }
+      ],
+      "physical_classification": "UNCLASSIFIED MODE",
+      "classification_rationale": "Mixed loadings across surface_pressure, co, relative_humidity without single dominant physical driver."
+    },
+    {
+      "mode_id": 9,
+      "energy_rank": 13,
+      "eigenvalue_real": 0.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.0,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": -27.63102,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 0.06614,
+      "relative_energy_fraction": 0.00332,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "u_wind_10m",
+          "loading": 0.9473
+        },
+        {
+          "variable": "v_wind_10m",
+          "loading": 0.0527
+        },
+        {
+          "variable": "inversion_strength",
+          "loading": 0.0
+        },
+        {
+          "variable": "boundary_layer_height",
+          "loading": 0.0
+        }
+      ],
+      "physical_classification": "Regional transport-associated",
+      "classification_rationale": "Dominant horizontal wind component loading (0.95) controlling advection."
+    },
+    {
+      "mode_id": 5,
+      "energy_rank": 14,
+      "eigenvalue_real": -0.15412,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 0.15412,
+      "phase_radians": 3.1416,
+      "growth_rate_per_hour": -1.87002,
+      "frequency_rad_per_hour": 3.14159,
+      "oscillation_period_hours": 2.0,
+      "frequency_cycles_per_day": 12.0,
+      "mode_energy": 0.00672,
+      "relative_energy_fraction": 0.00034,
+      "stability_class": "STABLE",
+      "top_features": [
+        {
+          "variable": "inversion_strength",
+          "loading": 0.409
+        },
+        {
+          "variable": "no2",
+          "loading": 0.2059
+        },
+        {
+          "variable": "relative_humidity",
+          "loading": 0.1173
+        },
+        {
+          "variable": "so2",
+          "loading": 0.1104
+        }
+      ],
+      "physical_classification": "Inversion-associated",
+      "classification_rationale": "High loading on inversion_strength (0.41) with stable dynamics."
+    },
+    {
+      "mode_id": 10,
+      "energy_rank": 15,
+      "eigenvalue_real": 1.0,
+      "eigenvalue_imag": 0.0,
+      "magnitude": 1.0,
+      "phase_radians": 0.0,
+      "growth_rate_per_hour": 0.0,
+      "frequency_rad_per_hour": 0.0,
+      "oscillation_period_hours": "INF",
+      "frequency_cycles_per_day": 0.0,
+      "mode_energy": 4e-05,
+      "relative_energy_fraction": 0.0,
+      "stability_class": "PERSISTENT",
+      "top_features": [
+        {
+          "variable": "pm10",
+          "loading": 0.4669
+        },
+        {
+          "variable": "pm25",
+          "loading": 0.4002
+        },
+        {
+          "variable": "cams_aerosol",
+          "loading": 0.0685
+        },
+        {
+          "variable": "so2",
+          "loading": 0.0139
+        }
+      ],
+      "physical_classification": "Aerosol-radiation-associated",
+      "classification_rationale": "Dominant particulate loading (0.47) with radiative extinction feedback."
+    }
+  ]
+}

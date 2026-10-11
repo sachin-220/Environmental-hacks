@@ -1,0 +1,71 @@
+{
+  "model_details": {
+    "name": "SAMEER-DMDc Spectral Atmospheric Chemistry Emulator",
+    "version": "1.0.0",
+    "phase": "Phase 3 (Physical Reduced-Order Dynamical Emulator)",
+    "framework": "Dynamic Mode Decomposition with Control (DMDc) / Koopman Operator Theory",
+    "developer": "AERIS Development Team (Bharat Builds)",
+    "license": "Open Academic / Environmental Forecasting License",
+    "date": "2023-11"
+  },
+  "scientific_foundation": {
+    "teacher_simulation": "WRF-Chem v4.5.1 with Two-Way Aerosol-Radiation Coupling (aer_ra_feedback=1)",
+    "governing_equation": "x(t+1) = A x(t) + B u(t)",
+    "state_dimension": 15,
+    "control_dimension": 8,
+    "selected_rank": 15,
+    "regularization_lambda": 0.0,
+    "explained_energy_percent": 100.0,
+    "spectral_radius": 1.1512
+  },
+  "data_provenance": {
+    "training_period": [
+      "2023-11-01T00:00:00Z",
+      "2023-11-02T10:00:00Z"
+    ],
+    "validation_period": [
+      "2023-11-02T11:00:00Z",
+      "2023-11-02T17:00:00Z"
+    ],
+    "test_period": [
+      "2023-11-02T18:00:00Z",
+      "2023-11-03T01:00:00Z"
+    ],
+    "total_training_snapshots": 176400,
+    "temporal_data_leakage": "NONE (Verified via strict chronological partitioning)",
+    "normalization_policy": "Strictly fit on training data only"
+  },
+  "intended_use": {
+    "primary_application": "Real-time 72-hour coupled air quality forecasting and intervention scenario testing for Delhi NCR",
+    "target_domain": "D03 3-km regional mesh [76.8\u00b0E, 28.2\u00b0N to 77.6\u00b0E, 28.9\u00b0N]",
+    "target_pollutants": [
+      "PM2.5",
+      "PM10",
+      "O3",
+      "NO2",
+      "SO2",
+      "CO"
+    ],
+    "target_meteorology": [
+      "PBLH",
+      "T2",
+      "Wind Speed",
+      "Inversion Strength"
+    ]
+  },
+  "performance_and_latency": {
+    "72h_inference_latency_ms": 32.215,
+    "sub_second_achievement": true,
+    "speedup_vs_wrfchem": "~446,997x faster",
+    "sample_validation_rmse": 0.10324
+  },
+  "uncertainty_methodology": {
+    "method": "Analytical residual covariance error propagation: Sigma_k = A * Sigma_{k-1} * A^T + Sigma_w",
+    "prediction_interval": "95% confidence bounds (z = 1.96)"
+  },
+  "limitations_and_boundary_conditions": [
+    "Linear Operator Approximation: Assumes atmospheric dynamics can be projected into a finite-dimensional linear Koopman subspace.",
+    "Extrapolation Limits: Extreme unprecedented emission shocks far outside training distribution may exhibit reduced accuracy.",
+    "Nonlinear Regime Shifts: Abrupt deep convective thunderstorms or severe synoptic frontal passages require updated lateral boundary forcing."
+  ]
+}

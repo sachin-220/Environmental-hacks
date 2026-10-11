@@ -1,0 +1,180 @@
+{
+  "confidence_level": 0.95,
+  "horizon_hours": 72,
+  "uncertainty_growth": {
+    "1h": {
+      "step": 1,
+      "target_pollutants_std": {
+        "pm25": 0.024,
+        "pm10": 0.039,
+        "o3": 2.022,
+        "no2": 0.1,
+        "so2": 0.055,
+        "co": 0.004
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 0.99,
+        "temperature_2m": 0.651,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 2.966,
+        "surface_pressure": 0.001,
+        "inversion_strength": 0.016,
+        "pm25": 0.024,
+        "pm10": 0.039,
+        "o3": 2.022,
+        "no2": 0.1,
+        "so2": 0.055,
+        "co": 0.004,
+        "cams_aerosol": 0.0
+      }
+    },
+    "6h": {
+      "step": 6,
+      "target_pollutants_std": {
+        "pm25": 0.058,
+        "pm10": 0.095,
+        "o3": 7.039,
+        "no2": 0.229,
+        "so2": 0.107,
+        "co": 0.008
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 0.999,
+        "temperature_2m": 1.535,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 8.427,
+        "surface_pressure": 0.001,
+        "inversion_strength": 2.395,
+        "pm25": 0.058,
+        "pm10": 0.095,
+        "o3": 7.039,
+        "no2": 0.229,
+        "so2": 0.107,
+        "co": 0.008,
+        "cams_aerosol": 0.0
+      }
+    },
+    "12h": {
+      "step": 12,
+      "target_pollutants_std": {
+        "pm25": 0.082,
+        "pm10": 0.135,
+        "o3": 17.613,
+        "no2": 0.531,
+        "so2": 0.224,
+        "co": 0.018
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 1.008,
+        "temperature_2m": 3.716,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 22.106,
+        "surface_pressure": 0.001,
+        "inversion_strength": 5.336,
+        "pm25": 0.082,
+        "pm10": 0.135,
+        "o3": 17.613,
+        "no2": 0.531,
+        "so2": 0.224,
+        "co": 0.018,
+        "cams_aerosol": 0.0
+      }
+    },
+    "24h": {
+      "step": 24,
+      "target_pollutants_std": {
+        "pm25": 0.116,
+        "pm10": 0.191,
+        "o3": 86.634,
+        "no2": 2.844,
+        "so2": 1.111,
+        "co": 0.098
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 1.253,
+        "temperature_2m": 19.509,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 122.124,
+        "surface_pressure": 0.001,
+        "inversion_strength": 34.219,
+        "pm25": 0.116,
+        "pm10": 0.191,
+        "o3": 86.634,
+        "no2": 2.844,
+        "so2": 1.111,
+        "co": 0.098,
+        "cams_aerosol": 0.001
+      }
+    },
+    "48h": {
+      "step": 48,
+      "target_pollutants_std": {
+        "pm25": 0.163,
+        "pm10": 0.27,
+        "o3": 2624.499,
+        "no2": 80.652,
+        "so2": 31.53,
+        "co": 2.79
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 21.586,
+        "temperature_2m": 553.874,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 3465.461,
+        "surface_pressure": 0.001,
+        "inversion_strength": 1007.525,
+        "pm25": 0.163,
+        "pm10": 0.27,
+        "o3": 2624.499,
+        "no2": 80.652,
+        "so2": 31.53,
+        "co": 2.79,
+        "cams_aerosol": 0.001
+      }
+    },
+    "72h": {
+      "step": 72,
+      "target_pollutants_std": {
+        "pm25": 0.2,
+        "pm10": 0.33,
+        "o3": 79547.061,
+        "no2": 2298.435,
+        "so2": 904.687,
+        "co": 79.225
+      },
+      "all_variables_std": {
+        "boundary_layer_height": 618.257,
+        "temperature_2m": 15840.349,
+        "u_wind_10m": 0.001,
+        "v_wind_10m": 0.001,
+        "wind_speed_10m": 0.001,
+        "relative_humidity": 98708.532,
+        "surface_pressure": 0.001,
+        "inversion_strength": 29312.084,
+        "pm25": 0.2,
+        "pm10": 0.33,
+        "o3": 79547.061,
+        "no2": 2298.435,
+        "so2": 904.687,
+        "co": 79.225,
+        "cams_aerosol": 0.001
+      }
+    }
+  },
+  "uncertainty_expansion_ratio_72h_vs_1h": {
+    "pm25": 8.33,
+    "o3": 39340.78,
+    "boundary_layer_height": 624.5,
+    "temperature_2m": 24332.33
+  }
+}

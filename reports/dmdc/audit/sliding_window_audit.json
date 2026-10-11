@@ -1,0 +1,10 @@
+{
+  "audit_name": "Sliding Window and Evaluation Origin Audit",
+  "reported_metric": "499 sliding validation windows",
+  "actual_calculation": "(len(X_test) - 72) // 72 = (36000 - 72) // 72 = 499",
+  "audit_verdict": "INCORRECT_TERMINOLOGY_AND_DATA_STRIDE",
+  "reason": "The 36,000 rows in X_test were 3,600 spatial cells * 10 hourly transitions. Passing X_test into a 1D sequential stride of 72 rows caused evaluation windows to step across multiple spatial grid cells rather than evaluating true 72-hour temporal trajectories of a single cell.",
+  "valid_test_horizon_limit": 10,
+  "explanation": "Because the test split is 11 hours long, each test cell only possesses 10 valid transition steps (h <= 10). True 72-hour multi-step rollouts can only be evaluated when a full 72-hour continuous trajectory is supplied, such as in retrospective simulation runs or spatial cell trajectories.",
+  "correction": "Differentiate cell-level evaluation across available test horizons (h=1h to 10h) from full 72h retrospective rollouts."
+}

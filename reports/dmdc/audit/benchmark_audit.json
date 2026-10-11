@@ -1,0 +1,12 @@
+{
+  "audit_name": "Inference Latency and Computational Acceleration Audit",
+  "single_step_latency_ms": 0.0026,
+  "rollout_24h_latency_ms": 1.62,
+  "rollout_72h_latency_ms": 31.979,
+  "sub_second_target_achieved": true,
+  "speedup_evaluation": {
+    "reported_speedup": "~447,000x faster",
+    "audit_verdict": "VALID_AS_INFERENCE_SPEEDUP",
+    "clarification": "The ~447,000x speedup represents INFERENCE ACCELERATION comparing a full 72-hour numerical WRF-Chem cluster simulation (~4 hours = 14,400s) against DMDc 72-hour spectral forward rollout (0.032s). It is strictly an inference speedup metric, not an end-to-end data pipeline speedup."
+  }
+}

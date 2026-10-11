@@ -1,0 +1,28 @@
+{
+  "single_step_latency": {
+    "mean_ms": 0.0026,
+    "p95_ms": 0.0032,
+    "trials_count": 20
+  },
+  "rollout_24h_latency": {
+    "mean_ms": 1.648,
+    "trials_count": 20
+  },
+  "rollout_72h_latency": {
+    "mean_ms": 32.215,
+    "mean_seconds": 0.03221,
+    "p95_ms": 33.106,
+    "trials_count": 20
+  },
+  "sub_second_target_achieved": true,
+  "memory_usage": {
+    "peak_allocated_kb": 351.61,
+    "current_allocated_kb": 29.53
+  },
+  "computational_acceleration": {
+    "reference_numerical_wrfchem_72h_sec": 14400.0,
+    "dmdc_spectral_rollout_72h_sec": 0.03221,
+    "speedup_factor": 446996.9,
+    "speedup_order_of_magnitude": "~446,997x faster"
+  }
+}

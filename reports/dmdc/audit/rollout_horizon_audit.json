@@ -1,0 +1,54 @@
+{
+  "audit_name": "Rollout Capability vs Held-Out Forecast Accuracy Audit",
+  "simulation_dataset_duration_hours": 72,
+  "partition_breakdown": {
+    "training_hours": 50,
+    "training_time_range": [
+      "2023-11-01T00:00:00Z",
+      "2023-11-03T01:00:00Z"
+    ],
+    "validation_hours": 11,
+    "validation_time_range": [
+      "2023-11-03T02:00:00Z",
+      "2023-11-03T12:00:00Z"
+    ],
+    "test_hours": 11,
+    "test_time_range": [
+      "2023-11-03T13:00:00Z",
+      "2023-11-03T23:00:00Z"
+    ]
+  },
+  "held_out_test_accuracy_evaluation": {
+    "test_duration_hours": 11,
+    "maximum_consecutive_hourly_transitions": 10,
+    "valid_evaluation_horizons": [
+      "1h",
+      "2h",
+      "4h",
+      "6h",
+      "8h",
+      "10h"
+    ],
+    "spatial_cells_evaluated": 3600,
+    "independent_targets_per_horizon": 3600,
+    "status": "EMPIRICALLY_VERIFIED_ON_HELD_OUT_DATA"
+  },
+  "seventy_two_hour_capability_classification": {
+    "computational_rollout": {
+      "execution_type": "Forward 72-step recursive matrix multiplication",
+      "measured_latency_ms": 32.22,
+      "status": "BENCHMARKED_AND_VERIFIED"
+    },
+    "uncertainty_propagation": {
+      "execution_type": "Analytical Lyapunov covariance expansion: Sigma_k = A Sigma_{k-1} A^T + Sigma_w",
+      "expansion_ratio_72h_vs_1h": 47.9,
+      "status": "MODEL_PROPAGATED_UNCERTAINTY"
+    },
+    "held_out_accuracy_72h": {
+      "status": "NOT_CLAIMED",
+      "reason": "The chronological held-out test partition is 11 hours long. Valid held-out accuracy cannot be computed for 72 hours from an 11-hour test set.",
+      "extrapolation_policy": "NO_EXTRAPOLATION_PERMITTED"
+    }
+  },
+  "verdict": "APPROVED_CLAIM_STRUCTURE_ENFORCED"
+}

@@ -1,0 +1,53 @@
+version: '3.8'
+
+# ==============================================================================
+# AERIS — AWS OPEN SOURCE ON-MACHINE STACK
+# Build it Open source, on your machine. No AWS account, no card, no bill.
+# Includes: LocalStack (Serverless), OpenSearch (Search/Data), Finch/Corretto
+# ==============================================================================
+
+services:
+  # 1. LocalStack: Offline AWS Cloud Emulator (DynamoDB, SNS, S3, Lambda)
+  localstack:
+    container_name: aeris-localstack
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"            # LocalStack Gateway
+      - "4510-4559:4510-4559"  # External services port range
+    environment:
+      - SERVICES=dynamodb,sns,s3,lambda,events
+      - AWS_DEFAULT_REGION=ap-south-1
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "./scratch/localstack:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  # 2. OpenSearch: Distributed Sensor Search & Geospatial Indexing
+  opensearch:
+    container_name: aeris-opensearch
+    image: opensearchproject/opensearch:2.11.0
+    environment:
+      - discovery.type=single-node
+      - plugins.security.disabled=true
+      - "OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"  # OpenSearch REST API
+      - "9600:9600"  # Performance Analyzer
+    volumes:
+      - "./scratch/opensearch-data:/usr/share/opensearch/data"
+
+  # 3. AERIS FastAPI & Physics Engine (Finch / Firecracker microVM container)
+  aeris-backend:
+    container_name: aeris-backend-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - LOCALSTACK_HOSTNAME=localstack
+      - OPENSEARCH_ENDPOINT=http://opensearch:9200
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - localstack
+      - opensearch

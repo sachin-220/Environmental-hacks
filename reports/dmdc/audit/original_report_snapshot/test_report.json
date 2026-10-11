@@ -1,0 +1,2725 @@
+{
+  "evaluation_horizons": [
+    1,
+    6,
+    12,
+    24,
+    48,
+    72
+  ],
+  "evaluated_windows_count": 499,
+  "results_by_horizon": {
+    "1h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.665,
+          "rmse": 0.996,
+          "r2": 1.0,
+          "mean_bias": 0.058,
+          "nmb_percent": 0.01,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 57.447,
+          "rmse": 85.969,
+          "r2": 0.8873,
+          "mean_bias": 57.447,
+          "nmb_percent": 12.77,
+          "pearson_r": 0.9742
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 227.754,
+          "rmse": 261.014,
+          "r2": -0.0384,
+          "mean_bias": -50.211,
+          "nmb_percent": -11.16,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.988
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.209,
+          "rmse": 0.245,
+          "r2": 0.9952,
+          "mean_bias": 0.142,
+          "nmb_percent": 0.05,
+          "pearson_r": 0.9992
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.085,
+          "rmse": 1.242,
+          "r2": 0.8777,
+          "mean_bias": 0.939,
+          "nmb_percent": 0.32,
+          "pearson_r": 0.9894
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 3.977,
+          "rmse": 4.516,
+          "r2": -0.6173,
+          "mean_bias": -2.79,
+          "nmb_percent": -0.96,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.803
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1.254,
+          "rmse": 1.639,
+          "r2": 0.9884,
+          "mean_bias": -0.701,
+          "nmb_percent": -1.1,
+          "pearson_r": 0.9971
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 4.707,
+          "rmse": 5.779,
+          "r2": 0.8558,
+          "mean_bias": -4.257,
+          "nmb_percent": -6.69,
+          "pearson_r": 0.9931
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.356,
+          "rmse": 19.098,
+          "r2": -0.5754,
+          "mean_bias": 11.542,
+          "nmb_percent": 18.15,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.716
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.007,
+          "rmse": 0.012,
+          "r2": 0.9999,
+          "mean_bias": 0.002,
+          "nmb_percent": 0.19,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 1.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.633,
+          "rmse": 1.641,
+          "r2": -0.0966,
+          "mean_bias": 0.487,
+          "nmb_percent": 38.17,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -11999.0
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 1.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.54,
+          "rmse": 23.994,
+          "r2": -0.0017,
+          "mean_bias": -0.982,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 1.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.591,
+          "rmse": 39.592,
+          "r2": -0.0017,
+          "mean_bias": -1.621,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1.804,
+          "rmse": 2.074,
+          "r2": 0.9851,
+          "mean_bias": 0.411,
+          "nmb_percent": 1.95,
+          "pearson_r": 0.9931
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 5.068,
+          "rmse": 6.82,
+          "r2": 0.8384,
+          "mean_bias": 4.988,
+          "nmb_percent": 23.72,
+          "pearson_r": 0.9783
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 15.645,
+          "rmse": 17.076,
+          "r2": -0.0131,
+          "mean_bias": 1.942,
+          "nmb_percent": 9.23,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.696
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.039,
+          "rmse": 0.05,
+          "r2": 0.9917,
+          "mean_bias": -0.025,
+          "nmb_percent": -0.06,
+          "pearson_r": 0.9982
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.167,
+          "rmse": 0.191,
+          "r2": 0.8789,
+          "mean_bias": -0.138,
+          "nmb_percent": -0.31,
+          "pearson_r": 0.9876
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.629,
+          "rmse": 0.705,
+          "r2": -0.6423,
+          "mean_bias": 0.441,
+          "nmb_percent": 1.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.738
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.02,
+          "rmse": 0.024,
+          "r2": 0.9892,
+          "mean_bias": -0.008,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.9958
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.06,
+          "rmse": 0.077,
+          "r2": 0.8895,
+          "mean_bias": -0.06,
+          "nmb_percent": -0.3,
+          "pearson_r": 0.9905
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.255,
+          "rmse": 0.298,
+          "r2": -0.6336,
+          "mean_bias": 0.185,
+          "nmb_percent": 0.94,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.688
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.002,
+          "rmse": 0.002,
+          "r2": 0.9813,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.9912
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.007,
+          "rmse": 0.008,
+          "r2": 0.7883,
+          "mean_bias": -0.004,
+          "nmb_percent": -0.26,
+          "pearson_r": 0.9162
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.019,
+          "rmse": 0.023,
+          "r2": -0.6348,
+          "mean_bias": 0.014,
+          "nmb_percent": 0.93,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.75
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 1.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.103,
+          "rmse": 0.133,
+          "r2": -0.0017,
+          "mean_bias": -0.005,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      }
+    },
+    "6h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 133.056,
+          "rmse": 295.582,
+          "r2": -0.1273,
+          "mean_bias": -132.846,
+          "nmb_percent": -26.18,
+          "pearson_r": 0.4817
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 494.006,
+          "rmse": 512.714,
+          "r2": -2.3918,
+          "mean_bias": -0.229,
+          "nmb_percent": -0.05,
+          "pearson_r": -0.7045
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 272.513,
+          "rmse": 298.567,
+          "r2": -0.1502,
+          "mean_bias": -107.888,
+          "nmb_percent": -21.26,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.423
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 5.666,
+          "rmse": 6.764,
+          "r2": -4.4534,
+          "mean_bias": -3.18,
+          "nmb_percent": -1.09,
+          "pearson_r": 0.2149
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 4.572,
+          "rmse": 5.139,
+          "r2": -2.1483,
+          "mean_bias": 0.009,
+          "nmb_percent": 0.0,
+          "pearson_r": -0.5803
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 4.242,
+          "rmse": 4.715,
+          "r2": -1.65,
+          "mean_bias": -3.72,
+          "nmb_percent": -1.28,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -0.316
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 30.863,
+          "rmse": 35.136,
+          "r2": -8.0517,
+          "mean_bias": 11.905,
+          "nmb_percent": 20.04,
+          "pearson_r": 0.1814
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 17.732,
+          "rmse": 20.44,
+          "r2": -2.0634,
+          "mean_bias": -0.042,
+          "nmb_percent": -0.07,
+          "pearson_r": -0.5375
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.862,
+          "rmse": 19.613,
+          "r2": -1.8205,
+          "mean_bias": 15.757,
+          "nmb_percent": 26.53,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -0.719
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 7.625,
+          "rmse": 11.74,
+          "r2": -55.0428,
+          "mean_bias": 6.343,
+          "nmb_percent": 494.53,
+          "pearson_r": -0.4001
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 2.559,
+          "rmse": 2.861,
+          "r2": -2.3294,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.5,
+          "pearson_r": -0.6661
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.632,
+          "rmse": 1.64,
+          "r2": -0.094,
+          "mean_bias": 0.481,
+          "nmb_percent": 37.48,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -3.103
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.539,
+          "rmse": 0.85,
+          "r2": 0.9987,
+          "mean_bias": 0.539,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.539,
+          "rmse": 0.85,
+          "r2": 0.9987,
+          "mean_bias": 0.539,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.477,
+          "rmse": 23.73,
+          "r2": -0.0003,
+          "mean_bias": -0.442,
+          "nmb_percent": -0.18,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.891,
+          "rmse": 1.404,
+          "r2": 0.9987,
+          "mean_bias": 0.891,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.891,
+          "rmse": 1.404,
+          "r2": 0.9987,
+          "mean_bias": 0.891,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.489,
+          "rmse": 39.158,
+          "r2": -0.0003,
+          "mean_bias": -0.73,
+          "nmb_percent": -0.18,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 25.961,
+          "rmse": 32.432,
+          "r2": -1.7121,
+          "mean_bias": 6.111,
+          "nmb_percent": 23.45,
+          "pearson_r": 0.2451
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 32.776,
+          "rmse": 35.657,
+          "r2": -2.2782,
+          "mean_bias": -0.032,
+          "nmb_percent": -0.12,
+          "pearson_r": -0.6436
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.941,
+          "rmse": 19.933,
+          "r2": -0.0244,
+          "mean_bias": -3.078,
+          "nmb_percent": -11.82,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.09
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.851,
+          "rmse": 1.057,
+          "r2": -4.6436,
+          "mean_bias": 0.57,
+          "nmb_percent": 1.3,
+          "pearson_r": 0.1446
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.707,
+          "rmse": 0.798,
+          "r2": -2.2151,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.0,
+          "pearson_r": -0.614
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.648,
+          "rmse": 0.729,
+          "r2": -1.6884,
+          "mean_bias": 0.578,
+          "nmb_percent": 1.32,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -0.325
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.323,
+          "rmse": 0.403,
+          "r2": -3.3083,
+          "mean_bias": 0.217,
+          "nmb_percent": 1.1,
+          "pearson_r": 0.2224
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.32,
+          "rmse": 0.346,
+          "r2": -2.1841,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.0,
+          "pearson_r": -0.5961
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.275,
+          "rmse": 0.312,
+          "r2": -1.5875,
+          "mean_bias": 0.245,
+          "nmb_percent": 1.24,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -0.165
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.035,
+          "rmse": 0.041,
+          "r2": -4.4459,
+          "mean_bias": 0.015,
+          "nmb_percent": 0.97,
+          "pearson_r": 0.235
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.027,
+          "rmse": 0.031,
+          "r2": -2.2819,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": -0.6485
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.025,
+          "r2": -1.0946,
+          "mean_bias": 0.018,
+          "nmb_percent": 1.19,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -0.323
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.003,
+          "rmse": 0.005,
+          "r2": 0.9987,
+          "mean_bias": 0.003,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.003,
+          "rmse": 0.005,
+          "r2": 0.9987,
+          "mean_bias": 0.003,
+          "nmb_percent": 0.22,
+          "pearson_r": 0.9997
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.103,
+          "rmse": 0.132,
+          "r2": -0.0003,
+          "mean_bias": -0.002,
+          "nmb_percent": -0.18,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      }
+    },
+    "12h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 132.347,
+          "rmse": 295.307,
+          "r2": -0.1351,
+          "mean_bias": -132.039,
+          "nmb_percent": -26.06,
+          "pearson_r": 0.4755
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 263.393,
+          "rmse": 349.297,
+          "r2": -0.5881,
+          "mean_bias": 0.676,
+          "nmb_percent": 0.13,
+          "pearson_r": 0.2054
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 271.236,
+          "rmse": 297.105,
+          "r2": -0.149,
+          "mean_bias": -106.983,
+          "nmb_percent": -21.12,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.155
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 11.91,
+          "rmse": 13.632,
+          "r2": -21.2099,
+          "mean_bias": 0.151,
+          "nmb_percent": 0.05,
+          "pearson_r": -0.1603
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 3.07,
+          "rmse": 3.916,
+          "r2": -0.8329,
+          "mean_bias": 0.013,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0811
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 4.238,
+          "rmse": 4.71,
+          "r2": -1.6508,
+          "mean_bias": -3.717,
+          "nmb_percent": -1.28,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.481
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 44.958,
+          "rmse": 49.484,
+          "r2": -16.9845,
+          "mean_bias": -11.645,
+          "nmb_percent": -19.6,
+          "pearson_r": -0.2224
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 12.405,
+          "rmse": 16.157,
+          "r2": -0.9172,
+          "mean_bias": -0.053,
+          "nmb_percent": -0.09,
+          "pearson_r": 0.0386
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.851,
+          "rmse": 19.598,
+          "r2": -1.821,
+          "mean_bias": 15.746,
+          "nmb_percent": 26.51,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.063
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 10.464,
+          "rmse": 14.505,
+          "r2": -84.5474,
+          "mean_bias": 9.172,
+          "nmb_percent": 715.13,
+          "pearson_r": -0.6933
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.276,
+          "rmse": 2.021,
+          "r2": -0.6606,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.5,
+          "pearson_r": 0.169
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.632,
+          "rmse": 1.64,
+          "r2": -0.094,
+          "mean_bias": 0.481,
+          "nmb_percent": 37.48,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -6.177
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1.066,
+          "rmse": 1.378,
+          "r2": 0.9966,
+          "mean_bias": 1.066,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.066,
+          "rmse": 1.378,
+          "r2": 0.9966,
+          "mean_bias": 1.066,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.407,
+          "rmse": 23.497,
+          "r2": -0.0,
+          "mean_bias": 0.084,
+          "nmb_percent": 0.04,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1.756,
+          "rmse": 2.269,
+          "r2": 0.9966,
+          "mean_bias": 1.756,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.756,
+          "rmse": 2.269,
+          "r2": 0.9966,
+          "mean_bias": 1.756,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.377,
+          "rmse": 38.776,
+          "r2": -0.0,
+          "mean_bias": 0.136,
+          "nmb_percent": 0.03,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 45.293,
+          "rmse": 67.256,
+          "r2": -10.7263,
+          "mean_bias": 38.68,
+          "nmb_percent": 149.08,
+          "pearson_r": 0.9624
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 19.37,
+          "rmse": 25.735,
+          "r2": -0.7168,
+          "mean_bias": 0.075,
+          "nmb_percent": 0.29,
+          "pearson_r": 0.1415
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.848,
+          "rmse": 19.864,
+          "r2": -0.0229,
+          "mean_bias": -2.972,
+          "nmb_percent": -11.45,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -1.613
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1.621,
+          "rmse": 1.993,
+          "r2": -19.193,
+          "mean_bias": 0.111,
+          "nmb_percent": 0.25,
+          "pearson_r": -0.26
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.465,
+          "rmse": 0.589,
+          "r2": -0.7659,
+          "mean_bias": -0.003,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.116
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.647,
+          "rmse": 0.727,
+          "r2": -1.6897,
+          "mean_bias": 0.577,
+          "nmb_percent": 1.31,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.384
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.671,
+          "rmse": 0.773,
+          "r2": -14.8836,
+          "mean_bias": 0.034,
+          "nmb_percent": 0.17,
+          "pearson_r": 0.0142
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.199,
+          "rmse": 0.26,
+          "r2": -0.7983,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.0992
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.275,
+          "rmse": 0.312,
+          "r2": -1.5871,
+          "mean_bias": 0.244,
+          "nmb_percent": 1.24,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -1.973
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.057,
+          "rmse": 0.072,
+          "r2": -16.365,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": -0.3595
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.019,
+          "rmse": 0.022,
+          "r2": -0.6935,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.1556
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.025,
+          "r2": -1.0937,
+          "mean_bias": 0.018,
+          "nmb_percent": 1.18,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.273
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.006,
+          "rmse": 0.008,
+          "r2": 0.9966,
+          "mean_bias": 0.006,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.006,
+          "rmse": 0.008,
+          "r2": 0.9966,
+          "mean_bias": 0.006,
+          "nmb_percent": 0.44,
+          "pearson_r": 0.9995
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.102,
+          "rmse": 0.131,
+          "r2": -0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.03,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      }
+    },
+    "24h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 132.936,
+          "rmse": 291.834,
+          "r2": -0.1108,
+          "mean_bias": -132.818,
+          "nmb_percent": -26.25,
+          "pearson_r": 0.4883
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 492.029,
+          "rmse": 510.938,
+          "r2": -2.405,
+          "mean_bias": 1.244,
+          "nmb_percent": 0.25,
+          "pearson_r": -0.7019
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 270.637,
+          "rmse": 296.636,
+          "r2": -0.1477,
+          "mean_bias": -106.415,
+          "nmb_percent": -21.03,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.429
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 32.098,
+          "rmse": 34.174,
+          "r2": -138.7684,
+          "mean_bias": 7.422,
+          "nmb_percent": 2.55,
+          "pearson_r": 0.2241
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 4.564,
+          "rmse": 5.132,
+          "r2": -2.1525,
+          "mean_bias": 0.016,
+          "nmb_percent": 0.01,
+          "pearson_r": -0.5793
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 4.235,
+          "rmse": 4.706,
+          "r2": -1.65,
+          "mean_bias": -3.713,
+          "nmb_percent": -1.28,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -5.659
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 47.082,
+          "rmse": 49.324,
+          "r2": -16.8871,
+          "mean_bias": -19.333,
+          "nmb_percent": -32.54,
+          "pearson_r": 0.4187
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 17.71,
+          "rmse": 20.42,
+          "r2": -2.0658,
+          "mean_bias": -0.064,
+          "nmb_percent": -0.11,
+          "pearson_r": -0.5366
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.84,
+          "rmse": 19.586,
+          "r2": -1.8205,
+          "mean_bias": 15.735,
+          "nmb_percent": 26.48,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -1.415
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 6.354,
+          "rmse": 10.683,
+          "r2": -45.4073,
+          "mean_bias": 6.354,
+          "nmb_percent": 495.39,
+          "pearson_r": 0.8625
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 2.559,
+          "rmse": 2.861,
+          "r2": -2.3294,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.5,
+          "pearson_r": -0.6661
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.632,
+          "rmse": 1.64,
+          "r2": -0.094,
+          "mean_bias": 0.481,
+          "nmb_percent": 37.48,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.734
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 4.152,
+          "rmse": 12.126,
+          "r2": 0.744,
+          "mean_bias": -0.015,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.872
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 4.152,
+          "rmse": 12.126,
+          "r2": 0.744,
+          "mean_bias": -0.015,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.872
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.524,
+          "rmse": 23.986,
+          "r2": -0.0017,
+          "mean_bias": -0.997,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 6.856,
+          "rmse": 20.004,
+          "r2": 0.7441,
+          "mean_bias": -0.02,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.8721
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 6.856,
+          "rmse": 20.004,
+          "r2": 0.7441,
+          "mean_bias": -0.02,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.8721
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.568,
+          "rmse": 39.575,
+          "r2": -0.0017,
+          "mean_bias": -1.64,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 115.05,
+          "rmse": 150.88,
+          "r2": -58.0647,
+          "mean_bias": 69.771,
+          "nmb_percent": 268.91,
+          "pearson_r": -0.7257
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 32.668,
+          "rmse": 35.573,
+          "r2": -2.2832,
+          "mean_bias": 0.075,
+          "nmb_percent": 0.29,
+          "pearson_r": -0.641
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.877,
+          "rmse": 19.856,
+          "r2": -0.0229,
+          "mean_bias": -2.971,
+          "nmb_percent": -11.45,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -3.241
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 10.116,
+          "rmse": 12.744,
+          "r2": -823.3645,
+          "mean_bias": -1.753,
+          "nmb_percent": -3.99,
+          "pearson_r": 0.2043
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.705,
+          "rmse": 0.796,
+          "r2": -2.2183,
+          "mean_bias": -0.002,
+          "nmb_percent": -0.01,
+          "pearson_r": -0.6122
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.647,
+          "rmse": 0.728,
+          "r2": -1.6885,
+          "mean_bias": 0.577,
+          "nmb_percent": 1.31,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -15.01
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 3.854,
+          "rmse": 4.98,
+          "r2": -658.3609,
+          "mean_bias": -0.493,
+          "nmb_percent": -2.5,
+          "pearson_r": 0.0505
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.32,
+          "rmse": 0.346,
+          "r2": -2.1837,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.01,
+          "pearson_r": -0.5948
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.275,
+          "rmse": 0.312,
+          "r2": -1.5871,
+          "mean_bias": 0.244,
+          "nmb_percent": 1.24,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -13.393
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.355,
+          "rmse": 0.444,
+          "r2": -657.382,
+          "mean_bias": -0.079,
+          "nmb_percent": -5.18,
+          "pearson_r": 0.369
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.027,
+          "rmse": 0.031,
+          "r2": -2.2906,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": -0.646
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.025,
+          "r2": -1.094,
+          "mean_bias": 0.018,
+          "nmb_percent": 1.18,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -13.323
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.067,
+          "r2": 0.744,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.872
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.067,
+          "r2": 0.744,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.872
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.103,
+          "rmse": 0.133,
+          "r2": -0.0017,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      }
+    },
+    "48h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 180.698,
+          "rmse": 282.84,
+          "r2": -0.044,
+          "mean_bias": -122.241,
+          "nmb_percent": -24.1,
+          "pearson_r": 0.4627
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 263.455,
+          "rmse": 349.04,
+          "r2": -0.5899,
+          "mean_bias": 0.13,
+          "nmb_percent": 0.03,
+          "pearson_r": 0.2055
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 270.943,
+          "rmse": 296.969,
+          "r2": -0.1509,
+          "mean_bias": -107.528,
+          "nmb_percent": -21.2,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.19
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 40.607,
+          "rmse": 40.686,
+          "r2": -196.8616,
+          "mean_bias": -7.145,
+          "nmb_percent": -2.45,
+          "pearson_r": 0.5776
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 3.078,
+          "rmse": 3.92,
+          "r2": -0.8365,
+          "mean_bias": 0.008,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0794
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 4.243,
+          "rmse": 4.713,
+          "r2": -1.6552,
+          "mean_bias": -3.721,
+          "nmb_percent": -1.28,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -9.379
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 41.657,
+          "rmse": 43.474,
+          "r2": -12.8782,
+          "mean_bias": 0.535,
+          "nmb_percent": 0.9,
+          "pearson_r": 0.5666
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 12.435,
+          "rmse": 16.174,
+          "r2": -0.9209,
+          "mean_bias": -0.035,
+          "nmb_percent": -0.06,
+          "pearson_r": 0.0366
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.869,
+          "rmse": 19.614,
+          "r2": -1.8248,
+          "mean_bias": 15.764,
+          "nmb_percent": 26.55,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -1.688
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 12.769,
+          "rmse": 16.84,
+          "r2": -114.5013,
+          "mean_bias": 12.769,
+          "nmb_percent": 1000.55,
+          "pearson_r": 0.7383
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.283,
+          "rmse": 2.026,
+          "r2": -0.6717,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.1642
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.633,
+          "rmse": 1.641,
+          "r2": -0.0966,
+          "mean_bias": 0.487,
+          "nmb_percent": 38.17,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -7.312
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 8.228,
+          "rmse": 17.474,
+          "r2": 0.4743,
+          "mean_bias": -0.095,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 8.228,
+          "rmse": 17.474,
+          "r2": 0.4743,
+          "mean_bias": -0.095,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.583,
+          "rmse": 24.125,
+          "r2": -0.002,
+          "mean_bias": -1.077,
+          "nmb_percent": -0.45,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 13.575,
+          "rmse": 28.833,
+          "r2": 0.4743,
+          "mean_bias": -0.159,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 13.575,
+          "rmse": 28.833,
+          "r2": 0.4743,
+          "mean_bias": -0.159,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.661,
+          "rmse": 39.807,
+          "r2": -0.002,
+          "mean_bias": -1.78,
+          "nmb_percent": -0.45,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 312.929,
+          "rmse": 380.157,
+          "r2": -374.0049,
+          "mean_bias": 273.585,
+          "nmb_percent": 1051.67,
+          "pearson_r": -0.961
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 19.387,
+          "rmse": 25.73,
+          "r2": -0.7179,
+          "mean_bias": 0.007,
+          "nmb_percent": 0.03,
+          "pearson_r": 0.1414
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.888,
+          "rmse": 19.865,
+          "r2": -0.024,
+          "mean_bias": -3.04,
+          "nmb_percent": -11.68,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -13.775
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 183.275,
+          "rmse": 266.947,
+          "r2": -361439.0577,
+          "mean_bias": 148.311,
+          "nmb_percent": 337.48,
+          "pearson_r": 0.3149
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.467,
+          "rmse": 0.591,
+          "r2": -0.7709,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.1126
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.648,
+          "rmse": 0.729,
+          "r2": -1.6942,
+          "mean_bias": 0.578,
+          "nmb_percent": 1.32,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -450.687
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 64.763,
+          "rmse": 96.563,
+          "r2": -247683.24,
+          "mean_bias": 55.362,
+          "nmb_percent": 281.32,
+          "pearson_r": 0.2105
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.2,
+          "rmse": 0.261,
+          "r2": -0.8078,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.094
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.275,
+          "rmse": 0.312,
+          "r2": -1.5934,
+          "mean_bias": 0.245,
+          "nmb_percent": 1.24,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -368.973
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 6.815,
+          "rmse": 10.142,
+          "r2": -341906.1278,
+          "mean_bias": 5.599,
+          "nmb_percent": 365.79,
+          "pearson_r": 0.3773
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.019,
+          "rmse": 0.023,
+          "r2": -0.6868,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.1544
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.025,
+          "r2": -1.099,
+          "mean_bias": 0.018,
+          "nmb_percent": 1.19,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -439.957
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.046,
+          "rmse": 0.097,
+          "r2": 0.4744,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.046,
+          "rmse": 0.097,
+          "r2": 0.4744,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.04,
+          "pearson_r": 0.7358
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.103,
+          "rmse": 0.134,
+          "r2": -0.002,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.45,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      }
+    },
+    "72h": {
+      "boundary_layer_height": {
+        "dmdc": {
+          "count": 499,
+          "mae": 1159.019,
+          "rmse": 1973.174,
+          "r2": -49.7974,
+          "mean_bias": 567.217,
+          "nmb_percent": 112.12,
+          "pearson_r": -0.5067
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 262.669,
+          "rmse": 347.797,
+          "r2": -0.5782,
+          "mean_bias": 1.346,
+          "nmb_percent": 0.27,
+          "pearson_r": 0.2113
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 270.565,
+          "rmse": 296.561,
+          "r2": -0.1475,
+          "mean_bias": -106.313,
+          "nmb_percent": -21.01,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -4.673
+      },
+      "temperature_2m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 41.259,
+          "rmse": 41.362,
+          "r2": -203.5979,
+          "mean_bias": 26.419,
+          "nmb_percent": 9.07,
+          "pearson_r": 0.8601
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 3.071,
+          "rmse": 3.909,
+          "r2": -0.8272,
+          "mean_bias": 0.015,
+          "nmb_percent": 0.01,
+          "pearson_r": 0.0843
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 4.236,
+          "rmse": 4.707,
+          "r2": -1.6499,
+          "mean_bias": -3.714,
+          "nmb_percent": -1.28,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -9.581
+      },
+      "u_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "v_wind_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": -0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "wind_speed_10m": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 1.0
+      },
+      "relative_humidity": {
+        "dmdc": {
+          "count": 499,
+          "mae": 47.171,
+          "rmse": 49.414,
+          "r2": -16.9449,
+          "mean_bias": -39.17,
+          "nmb_percent": -65.93,
+          "pearson_r": 0.8993
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 12.407,
+          "rmse": 16.134,
+          "r2": -0.913,
+          "mean_bias": -0.061,
+          "nmb_percent": -0.1,
+          "pearson_r": 0.041
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.843,
+          "rmse": 19.59,
+          "r2": -1.8204,
+          "mean_bias": 15.738,
+          "nmb_percent": 26.49,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -2.063
+      },
+      "surface_pressure": {
+        "dmdc": {
+          "count": 499,
+          "mae": 83988.0,
+          "rmse": 83988.0,
+          "r2": 0.0,
+          "mean_bias": 83988.0,
+          "nmb_percent": 8299.21,
+          "pearson_r": 0.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 0.0,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -83987999999.0
+      },
+      "inversion_strength": {
+        "dmdc": {
+          "count": 499,
+          "mae": 8.737,
+          "rmse": 13.801,
+          "r2": -76.4537,
+          "mean_bias": 8.737,
+          "nmb_percent": 681.25,
+          "pearson_r": 1.0
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 1.276,
+          "rmse": 2.021,
+          "r2": -0.6606,
+          "mean_bias": -0.006,
+          "nmb_percent": -0.5,
+          "pearson_r": 0.169
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 1.632,
+          "rmse": 1.64,
+          "r2": -0.094,
+          "mean_bias": 0.481,
+          "nmb_percent": 37.48,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -5.829
+      },
+      "pm25": {
+        "dmdc": {
+          "count": 499,
+          "mae": 11.883,
+          "rmse": 20.948,
+          "r2": 0.2365,
+          "mean_bias": 0.001,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6183
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 11.883,
+          "rmse": 20.948,
+          "r2": 0.2365,
+          "mean_bias": 0.001,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6183
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 18.541,
+          "rmse": 23.994,
+          "r2": -0.0017,
+          "mean_bias": -0.981,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "pm10": {
+        "dmdc": {
+          "count": 499,
+          "mae": 19.607,
+          "rmse": 34.565,
+          "r2": 0.2366,
+          "mean_bias": 0.001,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6183
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 19.607,
+          "rmse": 34.565,
+          "r2": 0.2366,
+          "mean_bias": 0.001,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6183
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 30.592,
+          "rmse": 39.592,
+          "r2": -0.0017,
+          "mean_bias": -1.619,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      },
+      "o3": {
+        "dmdc": {
+          "count": 499,
+          "mae": 216.932,
+          "rmse": 310.743,
+          "r2": -250.2471,
+          "mean_bias": 174.478,
+          "nmb_percent": 673.08,
+          "pearson_r": -0.5927
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 19.296,
+          "rmse": 25.637,
+          "r2": -0.7101,
+          "mean_bias": 0.099,
+          "nmb_percent": 0.38,
+          "pearson_r": 0.1465
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 17.854,
+          "rmse": 19.825,
+          "r2": -0.0226,
+          "mean_bias": -2.948,
+          "nmb_percent": -11.37,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -11.121
+      },
+      "no2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 147.298,
+          "rmse": 252.867,
+          "r2": -324305.3037,
+          "mean_bias": 77.495,
+          "nmb_percent": 176.34,
+          "pearson_r": 0.8479
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.466,
+          "rmse": 0.589,
+          "r2": -0.7607,
+          "mean_bias": -0.002,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.1176
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.647,
+          "rmse": 0.728,
+          "r2": -1.6883,
+          "mean_bias": 0.577,
+          "nmb_percent": 1.31,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -428.316
+      },
+      "so2": {
+        "dmdc": {
+          "count": 499,
+          "mae": 111.911,
+          "rmse": 215.748,
+          "r2": -1237622.1582,
+          "mean_bias": 82.45,
+          "nmb_percent": 418.95,
+          "pearson_r": 0.8187
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.199,
+          "rmse": 0.26,
+          "r2": -0.7983,
+          "mean_bias": -0.001,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.0992
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.275,
+          "rmse": 0.312,
+          "r2": -1.5871,
+          "mean_bias": 0.244,
+          "nmb_percent": 1.24,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -828.8
+      },
+      "co": {
+        "dmdc": {
+          "count": 499,
+          "mae": 17.712,
+          "rmse": 26.903,
+          "r2": -2406456.9281,
+          "mean_bias": 15.893,
+          "nmb_percent": 1038.3,
+          "pearson_r": 0.9638
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.019,
+          "rmse": 0.022,
+          "r2": -0.6791,
+          "mean_bias": -0.0,
+          "nmb_percent": -0.01,
+          "pearson_r": 0.1584
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.023,
+          "rmse": 0.025,
+          "r2": -1.0943,
+          "mean_bias": 0.018,
+          "nmb_percent": 1.19,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": -1221.864
+      },
+      "cams_aerosol": {
+        "dmdc": {
+          "count": 499,
+          "mae": 0.066,
+          "rmse": 0.116,
+          "r2": 0.2368,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6184
+        },
+        "persistence_baseline": {
+          "count": 499,
+          "mae": 0.066,
+          "rmse": 0.116,
+          "r2": 0.2368,
+          "mean_bias": 0.0,
+          "nmb_percent": 0.0,
+          "pearson_r": 0.6184
+        },
+        "rolling_mean_baseline": {
+          "count": 499,
+          "mae": 0.103,
+          "rmse": 0.133,
+          "r2": -0.0017,
+          "mean_bias": -0.005,
+          "nmb_percent": -0.41,
+          "pearson_r": 0.0
+        },
+        "skill_score_vs_persistence": 0.0
+      }
+    }
+  }
+}

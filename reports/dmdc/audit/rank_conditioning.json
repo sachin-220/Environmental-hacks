@@ -1,0 +1,64 @@
+{
+  "audit_name": "SVD Rank and Pseudoinverse Conditioning Audit",
+  "augmented_matrix_dimension": [
+    23,
+    176400
+  ],
+  "state_dimension_n": 15,
+  "control_dimension_m": 8,
+  "numerical_rank_numpy_default": 12,
+  "numerical_rank_tolerance": 4.646532138782475e-08,
+  "singular_values_top_15": [
+    1186.2880050332078,
+    727.5325922662807,
+    371.1823792547885,
+    169.6262702570184,
+    91.01209986872259,
+    52.684594274716574,
+    41.86150059024582,
+    24.09145834785816,
+    14.566403877778994,
+    7.9386481459448515,
+    0.7977374992745897,
+    0.41837691643832264,
+    2.1427506162594608e-13,
+    1.6013839169145904e-14,
+    5.166061271023337e-15
+  ],
+  "cliff_drop_analysis": {
+    "sigma_12": 0.41837691643832264,
+    "sigma_13": 2.1427506162594608e-13,
+    "ratio_sigma12_to_sigma13": 1.952522594386766e12,
+    "conclusion": "A drop of 12 orders of magnitude between sigma_12 and sigma_13 separates true dynamical subspace from machine roundoff noise."
+  },
+  "conditioning_at_candidate_ranks": {
+    "rank_12": {
+      "condition_number": 2835.45,
+      "s_min": 0.4183769,
+      "pseudoinverse_filter_min": 2.390189,
+      "stability": "STABLE_WELL_CONDITIONED"
+    },
+    "rank_13": {
+      "condition_number": 5.536e15,
+      "s_min": 2.14275e-13,
+      "pseudoinverse_filter_min": 1e12,
+      "stability": "ILL_CONDITIONED_NOISE_INVERSION"
+    },
+    "rank_15": {
+      "condition_number": 2.296e17,
+      "s_min": 5.166e-15,
+      "pseudoinverse_filter_min": 1e12,
+      "stability": "ILL_CONDITIONED_NOISE_INVERSION"
+    }
+  },
+  "actual_saved_artifact_status": {
+    "artifact_metadata_rank": 12,
+    "training_report_rank": 12,
+    "loaded_model_rank": 12,
+    "diff_loaded_A_vs_A12": 0.0,
+    "diff_loaded_B_vs_B12": 0.0
+  },
+  "explanation_of_narrative_discrepancy": "The previous textual completion report stated 'selected rank = 15' by confusing the physical state dimension (n = 15) with the SVD truncation rank. The mathematical optimizer, serialized model artifact, and model metadata on disk have always been rank 12.",
+  "audit_verdict": "RANK_12_VERIFIED_VALID",
+  "retraining_required": false
+}

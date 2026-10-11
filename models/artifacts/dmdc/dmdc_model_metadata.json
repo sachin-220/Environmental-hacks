@@ -1,0 +1,1161 @@
+{
+  "rank": 12,
+  "reg_lambda": 0.0,
+  "n_states": 15,
+  "n_controls": 8,
+  "explained_energy": 1.0000000000000002,
+  "state_variables": [
+    "boundary_layer_height",
+    "temperature_2m",
+    "u_wind_10m",
+    "v_wind_10m",
+    "wind_speed_10m",
+    "relative_humidity",
+    "surface_pressure",
+    "inversion_strength",
+    "pm25",
+    "pm10",
+    "o3",
+    "no2",
+    "so2",
+    "co",
+    "cams_aerosol"
+  ],
+  "control_variables": [
+    "anthro_nox",
+    "anthro_so2",
+    "anthro_co",
+    "anthro_voc",
+    "fire_frp",
+    "plume_transport_score",
+    "solar_radiation",
+    "precipitation"
+  ],
+  "fit_history": {
+    "best_rank": 12,
+    "best_lambda": 0.0,
+    "best_val_rmse": 0.10324,
+    "candidate_evaluations": [
+      {
+        "rank": 4,
+        "lambda": 0.0,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 1e-06,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 0.0001,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 0.01,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 0.1,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 1.0,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11937,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 4,
+        "lambda": 10.0,
+        "val_rmse": 0.23386,
+        "val_mae": 0.11936,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99354
+      },
+      {
+        "rank": 5,
+        "lambda": 0.0,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 1e-06,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 0.0001,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 0.01,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 0.1,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 1.0,
+        "val_rmse": 0.17207,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 5,
+        "lambda": 10.0,
+        "val_rmse": 0.17209,
+        "val_mae": 0.07742,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99746
+      },
+      {
+        "rank": 6,
+        "lambda": 0.0,
+        "val_rmse": 0.16137,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 1e-06,
+        "val_rmse": 0.16137,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 0.0001,
+        "val_rmse": 0.16137,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 0.01,
+        "val_rmse": 0.16137,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 0.1,
+        "val_rmse": 0.16137,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 1.0,
+        "val_rmse": 0.16138,
+        "val_mae": 0.07463,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 6,
+        "lambda": 10.0,
+        "val_rmse": 0.16141,
+        "val_mae": 0.07461,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.99877
+      },
+      {
+        "rank": 7,
+        "lambda": 0.0,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07474,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 1e-06,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07474,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 0.0001,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07474,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 0.01,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07474,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 0.1,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07473,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 1.0,
+        "val_rmse": 0.15946,
+        "val_mae": 0.07473,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 7,
+        "lambda": 10.0,
+        "val_rmse": 0.15949,
+        "val_mae": 0.07471,
+        "spectral_radius": 1.0,
+        "explained_energy": 0.9996
+      },
+      {
+        "rank": 8,
+        "lambda": 0.0,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05222,
+        "spectral_radius": 1.0996,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 1e-06,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05222,
+        "spectral_radius": 1.0996,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 0.0001,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05222,
+        "spectral_radius": 1.0996,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 0.01,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05222,
+        "spectral_radius": 1.0996,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 0.1,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05222,
+        "spectral_radius": 1.0995,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 1.0,
+        "val_rmse": 0.10793,
+        "val_mae": 0.05224,
+        "spectral_radius": 1.099,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 8,
+        "lambda": 10.0,
+        "val_rmse": 0.108,
+        "val_mae": 0.05245,
+        "spectral_radius": 1.0942,
+        "explained_energy": 0.99987
+      },
+      {
+        "rank": 9,
+        "lambda": 0.0,
+        "val_rmse": 0.10702,
+        "val_mae": 0.0503,
+        "spectral_radius": 1.1293,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 1e-06,
+        "val_rmse": 0.10702,
+        "val_mae": 0.0503,
+        "spectral_radius": 1.1293,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 0.0001,
+        "val_rmse": 0.10702,
+        "val_mae": 0.0503,
+        "spectral_radius": 1.1293,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 0.01,
+        "val_rmse": 0.10702,
+        "val_mae": 0.0503,
+        "spectral_radius": 1.1293,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 0.1,
+        "val_rmse": 0.10702,
+        "val_mae": 0.0503,
+        "spectral_radius": 1.1293,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 1.0,
+        "val_rmse": 0.10702,
+        "val_mae": 0.05031,
+        "spectral_radius": 1.1286,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 9,
+        "lambda": 10.0,
+        "val_rmse": 0.10707,
+        "val_mae": 0.05047,
+        "spectral_radius": 1.1226,
+        "explained_energy": 0.99997
+      },
+      {
+        "rank": 10,
+        "lambda": 0.0,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04737,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04737,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04737,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04737,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04737,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.04736,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 10,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04752,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 0.0,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04725,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04725,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04725,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04725,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04726,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.04731,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 11,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 0.0,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 12,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 0.0,
+        "val_rmse": 0.1034,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 13,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 0.0,
+        "val_rmse": 0.1034,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 14,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 0.0,
+        "val_rmse": 0.1034,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 15,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 16,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 17,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 18,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 19,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 20,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 21,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 22,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 0.0,
+        "val_rmse": 0.10339,
+        "val_mae": 0.04722,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 1e-06,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 0.0001,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1512,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 0.01,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04717,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 0.1,
+        "val_rmse": 0.10324,
+        "val_mae": 0.04721,
+        "spectral_radius": 1.1511,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 1.0,
+        "val_rmse": 0.10326,
+        "val_mae": 0.0473,
+        "spectral_radius": 1.1501,
+        "explained_energy": 1.0
+      },
+      {
+        "rank": 23,
+        "lambda": 10.0,
+        "val_rmse": 0.10348,
+        "val_mae": 0.04751,
+        "spectral_radius": 1.1414,
+        "explained_energy": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "dataset": "WRF-Chem Coupled Trajectories (Phase 2)",
+  "state_dimension": 15,
+  "control_dimension": 8,
+  "training_snapshots_count": 176400,
+  "validation_snapshots_count": 36000,
+  "test_snapshots_count": 36000,
+  "selected_rank": 12,
+  "selected_lambda": 0.0,
+  "explained_energy_percent": 100.0,
+  "best_val_rmse": 0.10324,
+  "train_time_range": [
+    "2023-11-01T00:00:00Z",
+    "2023-11-02T10:00:00Z"
+  ],
+  "val_time_range": [
+    "2023-11-02T11:00:00Z",
+    "2023-11-02T17:00:00Z"
+  ],
+  "test_time_range": [
+    "2023-11-02T18:00:00Z",
+    "2023-11-03T01:00:00Z"
+  ]
+}

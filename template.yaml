@@ -1,0 +1,81 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AERIS — Atmospheric Emission-Response Intelligence System
+  100% Open-Source Serverless Cloud Architecture (SAM CLI + LocalStack)
+  No AWS account, no card, no bill required.
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 512
+    Runtime: python3.11
+    Environment:
+      Variables:
+        LOCALSTACK_HOSTNAME: localhost
+        AWS_DEFAULT_REGION: ap-south-1
+        OPENAQ_API_KEY: mock_open_telemetry
+
+Resources:
+  # 1. API Gateway REST API
+  AerisApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: prod
+      Cors:
+        AllowMethods: "'*'"
+        AllowHeaders: "'*'"
+        AllowOrigin: "'*'"
+
+  # 2. Ingestion & Forecasting Function (Koopman Operator DMDc)
+  AirshedRolloutFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: api.server.app
+      Description: Ingests 33 ground stations & computes 72h Koopman physical rollout
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+            RestApiId: !Ref AerisApi
+
+  # 3. DynamoDB Ward Subscriptions Table (LocalStack Emulated)
+  WardSubscriptionsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: AERIS_Ward_Subscriptions
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: ward_id
+          AttributeType: S
+        - AttributeName: subscription_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: ward_id
+          KeyType: HASH
+        - AttributeName: subscription_id
+          KeyType: RANGE
+
+  # 4. Amazon SNS Emergency Multi-Channel Topic
+  EmergencyAlertTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: AERIS-Emergency-Broadcast
+      DisplayName: AERIS Delhi NCR Multi-Channel Inversion Alert Topic
+
+  # 5. S3 Bucket for Rollouts & CAQM Statutory Directives
+  ForecastCacheBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: aeris-rollouts-cache
+
+Outputs:
+  AerisApiEndpoint:
+    Description: "API Gateway endpoint URL for Local/Prod stage"
+    Value: !Sub "http://127.0.0.1:8000/"
+  LocalStackEndpoint:
+    Description: "LocalStack Offline AWS Emulator Endpoint"
+    Value: "http://localhost:4566"

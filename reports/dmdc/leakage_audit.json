@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "train_snapshots_count": 35,
+  "val_snapshots_count": 7,
+  "test_snapshots_count": 8,
+  "train_val_overlap_count": 0,
+  "val_test_overlap_count": 0,
+  "train_test_overlap_count": 0,
+  "train_val_overlap_timestamps": [],
+  "val_test_overlap_timestamps": [],
+  "train_test_overlap_timestamps": [],
+  "scaler_fitted_on_test": false,
+  "future_target_leakage": "NONE",
+  "data_leakage_audit_summary": "DATA LEAKAGE AUDIT: PASS - Strictly chronological splits and train-only normalization verified."
+}

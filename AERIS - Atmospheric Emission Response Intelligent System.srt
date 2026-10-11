@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:05,480
+At cold dawn, toxic smog chokes Delhi schoolchildren.
+
+2
+00:00:05,480 --> 00:00:09,720
+Inversions trap the smoke and outdated warnings arrive too late.
+
+3
+00:00:09,720 --> 00:00:14,880
+We built AERIS, an atmospheric early-warning platform tracking what is in the air, warning
+
+4
+00:00:14,880 --> 00:00:19,120
+those most exposed, and changing what happens on bad days.
+
+5
+00:00:19,120 --> 00:00:26,200
+Here, we resolve the airshed down to high-resolution 3-km grid cells across 33 ground monitoring stations.
+
+6
+00:00:26,200 --> 00:00:32,000
+AERIS continuously ingests all 33 ground stations in real time, plotting network-wide pollutant
+
+7
+00:00:32,000 --> 00:00:35,080
+profiles against national air standards.
+
+8
+00:00:35,080 --> 00:00:40,760
+In Tab 2, the Citizen Portal, AERIS empowers administrators with our CAQM engine, generating
+
+9
+00:00:40,760 --> 00:00:46,480
+statutory enforcement orders under the CAQM Act 2021 in a single click.
+
+10
+00:00:46,480 --> 00:00:51,200
+Scanning the QR code allows instant mobile onboarding on the local network.
+
+11
+00:00:51,200 --> 00:00:56,240
+A citizen enters their email and our multi-agent engine dispatches a verified emergency
+
+12
+00:00:56,240 --> 00:01:00,280
+air warning to their inbox via real-time SMTP.
+
+13
+00:01:00,280 --> 00:01:05,840
+For schools, AERIS issues dynamic GRAP-IV directives, suspending morning outdoor assemblies
+
+14
+00:01:05,840 --> 00:01:09,200
+and pinpointing safe indoor ventilation windows.
+
+15
+00:01:09,200 --> 00:01:15,720
+In Tab 3, AERIS predicts air quality 72 hours in advance using Koopman dynamical rollouts.
+
+16
+00:01:15,720 --> 00:01:25,000
+Watch as we toggle between AQI, PM2.5, PM10, Ozone, and Nitrogen Dioxide with analytical Lyapunov uncertainty bounds.
+
+17
+00:01:25,000 --> 00:01:28,920
+In Tab 4, we model the critical thermal inversion lid.
+
+18
+00:01:28,920 --> 00:01:35,200
+As nocturnal radiative cooling collapses the boundary layer to under 200 meters, PM2.5 particulates
+
+19
+00:01:35,200 --> 00:01:39,600
+are violently trapped near ground level during early morning hours.
+
+20
+00:01:39,600 --> 00:01:45,560
+In Tab 5, we ingest live satellite fire radiative power from NASA FIRMS to track active stubble fires,
+
+21
+00:01:45,560 --> 00:01:52,320
+projecting smoke advection into Delhi using our Plume Clock trajectory integrator and regional advection timeline.
+
+22
+00:01:52,320 --> 00:01:57,040
+Instead of passive monitoring, AERIS changes what happens on bad days.
+
+23
+00:01:57,040 --> 00:02:01,600
+Our Sequential Least Squares Model Predictive Control algorithm computes optimal municipal
+
+24
+00:02:01,600 --> 00:02:06,560
+intervention schedules, cutting peak PM2.5 by up to 32%.
+
+25
+00:02:06,560 --> 00:02:11,960
+Crucially, AERIS models Airshed Federalism through economic arbitrage, showing that funding upwind
+
+26
+00:02:11,960 --> 00:02:17,480
+biomass remediation in Punjab yields 6.9 times higher clean air return per rupee than
+
+27
+00:02:17,480 --> 00:02:21,040
+intra-Delhi lockdowns, resolving the Nash deadlock.
+
+28
+00:02:21,040 --> 00:02:27,120
+In Tab 7, all 33 stations stream live sensor diagnostics, cross-pollutant ratios, and spatial
+
+29
+00:02:27,120 --> 00:02:30,360
+Pearson cross-correlations across Delhi wards.
+
+30
+00:02:30,360 --> 00:02:36,760
+AERIS is architected to run entirely on open-source AWS tooling locally with zero cloud cost.
+
+31
+00:02:36,760 --> 00:02:42,280
+We use AWS Cedar for policy authorization, OpenSearch for geospatial indexing, and
+
+32
+00:02:42,280 --> 00:02:45,320
+Strands Agents SDK for multi-agent reasoning.
+
+33
+00:02:45,320 --> 00:02:50,520
+In Tab 9, our model achieves a proven RMSE of 14.8 micrograms per cubic meter.
+
+34
+00:02:50,520 --> 00:02:57,200
+All validation weights, benchmarks, and reproducible datasets are verified in our public Google Drive proof repository.
+
+35
+00:02:57,200 --> 00:03:04,920
+AERIS empowers citizens, schools, and city administrators to take control of their air and breathe easier.
+
+36
+00:03:04,920 --> 00:03:05,440
+Thank you.

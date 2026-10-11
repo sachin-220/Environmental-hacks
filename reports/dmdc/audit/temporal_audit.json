@@ -1,0 +1,33 @@
+{
+  "audit_name": "Temporal Split and Chronological Partitioning Audit",
+  "first_timestamp": "2023-11-01T00:00:00Z",
+  "last_timestamp": "2023-11-03T23:00:00Z",
+  "simulation_duration_hours": 72,
+  "timestep": "1 hour (hourly)",
+  "partitions": {
+    "training": {
+      "start": "2023-11-01T00:00:00Z",
+      "end": "2023-11-03T01:00:00Z",
+      "timestamps_count": 50,
+      "duration_hours": 50
+    },
+    "validation": {
+      "start": "2023-11-03T02:00:00Z",
+      "end": "2023-11-03T12:00:00Z",
+      "timestamps_count": 11,
+      "duration_hours": 11
+    },
+    "test": {
+      "start": "2023-11-03T13:00:00Z",
+      "end": "2023-11-03T23:00:00Z",
+      "timestamps_count": 11,
+      "duration_hours": 11
+    }
+  },
+  "chronological_ordering_check": {
+    "max_train_lt_min_val": true,
+    "max_val_lt_min_test": true,
+    "temporal_overlap": "NONE",
+    "status": "PASS"
+  }
+}

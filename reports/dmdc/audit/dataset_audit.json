@@ -1,0 +1,80 @@
+{
+  "audit_name": "Dataset Dimension and Snapshot Arithmetic Audit",
+  "wrfchem_simulation_total_hours": 72,
+  "spatial_cells_count": 3600,
+  "total_processed_rows": 259200,
+  "state_dimension": 15,
+  "control_dimension": 8,
+  "matrix_shapes": {
+    "X_train": [
+      176400,
+      15
+    ],
+    "X_prime_train": [
+      176400,
+      15
+    ],
+    "U_train": [
+      176400,
+      8
+    ],
+    "X_val": [
+      36000,
+      15
+    ],
+    "X_prime_val": [
+      36000,
+      15
+    ],
+    "U_val": [
+      36000,
+      8
+    ],
+    "X_test": [
+      36000,
+      15
+    ],
+    "X_prime_test": [
+      36000,
+      15
+    ],
+    "U_test": [
+      36000,
+      8
+    ]
+  },
+  "snapshot_arithmetic_verification": {
+    "train": {
+      "reported_snapshots": 176400,
+      "reported_formula": "35 time steps * 3600 cells",
+      "reported_formula_product": 126000,
+      "formula_status": "INCORRECT_REPORTED_FORMULA",
+      "actual_train_timestamps_count": 50,
+      "actual_train_transitions_per_cell": 49,
+      "actual_computed_snapshots": 176400,
+      "actual_snapshots_status": "CORRECT_SNAP_COUNT_176400",
+      "correction": "176,400 snapshots = 49 transition pairs * 3,600 cells across 50 training timestamps (hours 0 to 49)."
+    },
+    "validation": {
+      "reported_snapshots": 36000,
+      "actual_val_timestamps_count": 11,
+      "actual_val_transitions_per_cell": 10,
+      "actual_computed_snapshots": 36000,
+      "status": "CORRECT",
+      "explanation": "36,000 snapshots = 10 transition pairs * 3,600 cells across 11 validation timestamps (hours 50 to 60)."
+    },
+    "test": {
+      "reported_snapshots": 36000,
+      "actual_test_timestamps_count": 11,
+      "actual_test_transitions_per_cell": 10,
+      "actual_computed_snapshots": 36000,
+      "status": "CORRECT",
+      "explanation": "36,000 snapshots = 10 transition pairs * 3,600 cells across 11 test timestamps (hours 61 to 71)."
+    },
+    "total_transition_snapshots": {
+      "computed": 248400,
+      "reported": 248400,
+      "status": "CORRECT"
+    }
+  }
+}

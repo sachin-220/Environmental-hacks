@@ -1,0 +1,69 @@
+{
+  "audit_name": "Analytical Error Covariance and Uncertainty Growth Audit",
+  "equation": "Sigma_k = A * Sigma_{k-1} * A^T + Sigma_w",
+  "space_of_propagation": "Standardized Koopman space, inverse-transformed to physical units via scale factors.",
+  "confidence_level": 0.95,
+  "z_multiplier": 1.96,
+  "uncertainty_growth_ratios_72h_vs_1h": {
+    "pm25": 8.33,
+    "o3": 39340.78,
+    "boundary_layer_height": 624.5,
+    "temperature_2m": 24332.33
+  },
+  "physical_standard_deviations_at_checkpoints": {
+    "1h": {
+      "pm25": 0.024,
+      "pm10": 0.039,
+      "o3": 2.022,
+      "no2": 0.1,
+      "so2": 0.055,
+      "co": 0.004
+    },
+    "6h": {
+      "pm25": 0.058,
+      "pm10": 0.095,
+      "o3": 7.039,
+      "no2": 0.229,
+      "so2": 0.107,
+      "co": 0.008
+    },
+    "12h": {
+      "pm25": 0.082,
+      "pm10": 0.135,
+      "o3": 17.613,
+      "no2": 0.531,
+      "so2": 0.224,
+      "co": 0.018
+    },
+    "24h": {
+      "pm25": 0.116,
+      "pm10": 0.191,
+      "o3": 86.634,
+      "no2": 2.844,
+      "so2": 1.111,
+      "co": 0.098
+    },
+    "48h": {
+      "pm25": 0.163,
+      "pm10": 0.27,
+      "o3": 2624.499,
+      "no2": 80.652,
+      "so2": 31.53,
+      "co": 2.79
+    },
+    "72h": {
+      "pm25": 0.2,
+      "pm10": 0.33,
+      "o3": 79547.061,
+      "no2": 2298.435,
+      "so2": 904.687,
+      "co": 79.225
+    }
+  },
+  "drivers_of_growth": [
+    "Process noise accumulation (Sigma_w added at each recursive step)",
+    "Spectral radius > 1.0 (unstable inversion modes causing exponential covariance growth over long horizons)",
+    "Inverse physical variance scaling"
+  ],
+  "status": "VERIFIED"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "sector": "road_transport",
+    "display_name": "Traffic Abatement (GRAP Odd-Even / EV Transit)",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 1.0,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  },
+  {
+    "sector": "industry",
+    "display_name": "Industrial Fuel Switching & Production Curbs",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 1.5,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  },
+  {
+    "sector": "power_plants",
+    "display_name": "Power Generation Re-dispatch / FGD Operation",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 2.0,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  },
+  {
+    "sector": "agriculture",
+    "display_name": "Stubble Fire In-Situ Mulching & Mechanized Suppression",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 0.8,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  },
+  {
+    "sector": "waste_burning",
+    "display_name": "Municipal Solid Waste Open Burning Night Patrols",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 0.5,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  },
+  {
+    "sector": "residential",
+    "display_name": "Residential Clean Cooking & Space Heating Fuel Subsidy",
+    "sensitivity_ug_m3_per_unit": 0.0,
+    "relative_cost_weight": 0.7,
+    "cost_efficiency_score": 0.0,
+    "provenance": "MODELLED"
+  }
+]

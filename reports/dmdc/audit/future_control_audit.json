@@ -1,0 +1,35 @@
+{
+  "audit_name": "Future Control Forcing Provenance and Sourcing Audit",
+  "control_variables": [
+    "anthro_nox",
+    "anthro_so2",
+    "anthro_co",
+    "anthro_voc",
+    "fire_frp",
+    "plume_transport_score",
+    "solar_radiation",
+    "precipitation"
+  ],
+  "control_dimension_m": 8,
+  "supported_future_forcing_modes": {
+    "RETROSPECTIVE": {
+      "provenance": "REPLAYED MODELLED INPUTS",
+      "implementation": "Slices actual future forcing U(t+1)...U(t+H) from held-out simulation trajectories.",
+      "scientific_usage": "Evaluating model dynamic response assuming perfect future environmental forcing.",
+      "claim_boundary": "Permissible for retrospective model evaluation, but must NOT be claimed as an operational real-time forecast."
+    },
+    "OPERATIONAL": {
+      "provenance": "HELD-CONSTANT INITIAL STATE + PARAMETERIZED DIURNAL CYCLE",
+      "implementation": "Persists u(t0) forward for emissions and meteorology; parameterizes diurnal solar cycle via 750 * sin(pi * (h % 24) / 12).",
+      "scientific_usage": "Zero-lookahead forward forecasting when future numerical meteorology/emissions are not yet available.",
+      "claim_boundary": "Legitimate operational rollout capability; subject to persistence uncertainty."
+    },
+    "SCENARIO": {
+      "provenance": "POLICY SCENARIO MULTIPLIERS",
+      "implementation": "Applies user-specified or optimization abatement factors to emission controls (e.g. 0.70x NOx).",
+      "scientific_usage": "MPC optimization and counterfactual emission intervention assessment in Phase 4.",
+      "claim_boundary": "Counterfactual forward simulation, not a passive forecast."
+    }
+  },
+  "verdict": "FUTURE_CONTROLS_PROVENANCE_VERIFIED"
+}

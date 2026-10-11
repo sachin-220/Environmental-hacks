@@ -1,0 +1,9 @@
+{
+  "audit_name": "DMDc Transition Alignment and Boundary Audit",
+  "formula": "x(t+1) = A x(t) + B u(t)",
+  "timestep_delta_t": "1.0 hour",
+  "transition_alignment_verified": true,
+  "cross_cell_boundary_leakage_in_matrices": false,
+  "status": "PASS",
+  "explanation": "Each row k in X_train, X_prime_train, U_train represents a genuine 1-hour transition within a single grid cell. Transitions do not cross spatial cell boundaries."
+}
